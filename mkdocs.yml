@@ -1,0 +1,16 @@
+site_name: Athenaeum
+theme:
+  name: material
+  plugins:
+    - blog
+    - group
+    - offline
+    - search
+    - social
+    - tags
+  palette:
+    primary: deep_orange
+    accent: amber
+  font:
+    text: Roboto
+    code: Roboto Mono
