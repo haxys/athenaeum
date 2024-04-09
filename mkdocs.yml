@@ -1,4 +1,13 @@
-site_name: Athenaeum
+site_name: Haxys Labs | Athenaeum
+site_description: A collection of documentation by Haxys Labs.
+site_author: Haxys Labs
+copyright: Copyright © 2024 Haxys Labs
+site_url: https://haxys.github.io/haxys-dox/
+repo_url: https://github.com/haxys/haxys-dox/
+
+nav:
+  - Home: index.md
+
 theme:
   name: material
   plugins:
