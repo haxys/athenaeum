@@ -12,19 +12,25 @@
         <meta name="author" content="Haxys Labs">
       
       
+        <link rel="canonical" href="https://haxys.net/athenaeum/ScriptSharks.com/0x20%20Analysis/20%20Introduction/">
       
       
+        <link rel="prev" href="../../0x10%20Design/12%20Droppers/40%20HTML/">
       
-      <link rel="icon" href="/athenaeum/assets/images/favicon.png">
+      
+        <link rel="next" href="../21%20File%20Forensics/Emails/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17">
     
     
       
-        <title>Haxys Labs | Athenaeum</title>
+        <title>20 Know the Enemy - Haxys Labs | Athenaeum</title>
       
     
     
-      <link rel="stylesheet" href="/athenaeum/assets/stylesheets/main.bcfcd587.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.bcfcd587.min.css">
       
       
 
@@ -43,7 +49,7 @@
       
     
     
-    <script>__md_scope=new URL("/athenaeum/",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -61,6 +67,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#the-flip-side" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -73,7 +84,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/athenaeum/." title="Haxys Labs | Athenaeum" class="md-header__button md-logo" aria-label="Haxys Labs | Athenaeum" data-md-component="logo">
+    <a href="../../.." title="Haxys Labs | Athenaeum" class="md-header__button md-logo" aria-label="Haxys Labs | Athenaeum" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -93,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              20 Know the Enemy
             
           </span>
         </div>
@@ -180,7 +191,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/athenaeum/." title="Haxys Labs | Athenaeum" class="md-nav__button md-logo" aria-label="Haxys Labs | Athenaeum" data-md-component="logo">
+    <a href="../../.." title="Haxys Labs | Athenaeum" class="md-nav__button md-logo" aria-label="Haxys Labs | Athenaeum" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -210,7 +221,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -227,17 +238,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -251,7 +264,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             ScriptSharks.com
@@ -265,7 +278,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/" class="md-nav__link">
+      <a href="../../" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -321,7 +334,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0x00%20History/00%20Sipping%20from%20the%20Fire%20Hose/" class="md-nav__link">
+      <a href="../../0x00%20History/00%20Sipping%20from%20the%20Fire%20Hose/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -342,7 +355,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0x00%20History/01%20In%20the%20Beginning/" class="md-nav__link">
+      <a href="../../0x00%20History/01%20In%20the%20Beginning/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -363,7 +376,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0x00%20History/02%20Malware%20Explosion/" class="md-nav__link">
+      <a href="../../0x00%20History/02%20Malware%20Explosion/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -384,7 +397,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0x00%20History/03%20The%2090s/" class="md-nav__link">
+      <a href="../../0x00%20History/03%20The%2090s/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -405,7 +418,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0x00%20History/04%20Millenial%20Malware/" class="md-nav__link">
+      <a href="../../0x00%20History/04%20Millenial%20Malware/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -426,7 +439,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0x00%20History/05%20Ransomware%20Rising/" class="md-nav__link">
+      <a href="../../0x00%20History/05%20Ransomware%20Rising/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -490,7 +503,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0x10%20Design/10%20Introduction/" class="md-nav__link">
+      <a href="../../0x10%20Design/10%20Introduction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -511,7 +524,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0x10%20Design/11%20Overview/" class="md-nav__link">
+      <a href="../../0x10%20Design/11%20Overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -567,7 +580,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0x10%20Design/12%20Droppers/00%20Intro/" class="md-nav__link">
+      <a href="../../0x10%20Design/12%20Droppers/00%20Intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -588,7 +601,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0x10%20Design/12%20Droppers/10%20Design/" class="md-nav__link">
+      <a href="../../0x10%20Design/12%20Droppers/10%20Design/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -609,7 +622,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0x10%20Design/12%20Droppers/20%20LNK/" class="md-nav__link">
+      <a href="../../0x10%20Design/12%20Droppers/20%20LNK/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -630,7 +643,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0x10%20Design/12%20Droppers/30%20ISO/" class="md-nav__link">
+      <a href="../../0x10%20Design/12%20Droppers/30%20ISO/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -651,7 +664,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0x10%20Design/12%20Droppers/40%20HTML/" class="md-nav__link">
+      <a href="../../0x10%20Design/12%20Droppers/40%20HTML/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -685,17 +698,19 @@
                 
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" checked>
         
           
           <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
@@ -709,7 +724,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_4">
             <span class="md-nav__icon md-icon"></span>
             0x20 Analysis
@@ -720,10 +735,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0x20%20Analysis/20%20Introduction/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -732,6 +756,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -779,7 +804,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0x20%20Analysis/21%20File%20Forensics/Emails/" class="md-nav__link">
+      <a href="../21%20File%20Forensics/Emails/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -800,7 +825,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0x20%20Analysis/21%20File%20Forensics/ISOs/" class="md-nav__link">
+      <a href="../21%20File%20Forensics/ISOs/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -864,7 +889,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0x20%20Analysis/22%20Language%20Tricks/HTML%20and%20JS/" class="md-nav__link">
+      <a href="../22%20Language%20Tricks/HTML%20and%20JS/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -971,7 +996,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0x30%20Tools%20of%20the%20Trade/30%20Virtual%20Machines/00%20Background/" class="md-nav__link">
+      <a href="../../0x30%20Tools%20of%20the%20Trade/30%20Virtual%20Machines/00%20Background/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -992,7 +1017,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0x30%20Tools%20of%20the%20Trade/30%20Virtual%20Machines/01%20Hypervisors/" class="md-nav__link">
+      <a href="../../0x30%20Tools%20of%20the%20Trade/30%20Virtual%20Machines/01%20Hypervisors/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1013,7 +1038,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0x30%20Tools%20of%20the%20Trade/30%20Virtual%20Machines/02%20Guest%20OSes/" class="md-nav__link">
+      <a href="../../0x30%20Tools%20of%20the%20Trade/30%20Virtual%20Machines/02%20Guest%20OSes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1077,7 +1102,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0x30%20Tools%20of%20the%20Trade/31%20File%20Manipulation/Metadata/" class="md-nav__link">
+      <a href="../../0x30%20Tools%20of%20the%20Trade/31%20File%20Manipulation/Metadata/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1149,7 +1174,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0xF0%20About/FC%20Old%20News/" class="md-nav__link">
+      <a href="../../0xF0%20About/FC%20Old%20News/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1170,7 +1195,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0xF0%20About/FD%20Origins/" class="md-nav__link">
+      <a href="../../0xF0%20About/FD%20Origins/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1191,7 +1216,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0xF0%20About/FE%20Changelog/" class="md-nav__link">
+      <a href="../../0xF0%20About/FE%20Changelog/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1212,7 +1237,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0xF0%20About/FF%20License/" class="md-nav__link">
+      <a href="../../0xF0%20About/FF%20License/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1258,6 +1283,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -1269,8 +1296,55 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+  
+  
+
+
+<blockquote>
+<p>"If you know the enemy and know yourself, you need not fear the result of a hundred battles." ~Sun Tzu, <em>The Art of War</em></p>
+</blockquote>
+<h1 id="the-flip-side">The Flip-Side</h1>
+<p>As mentioned in the <a href="../../0x10%20Design/10%20Introduction/">Design Section</a>, malware researchers and malware authors are two sides of the same coin. In this section, we'll explore the analytic methods, techniques and tools used to examine and understand malware samples, and how to perform such analysis safely. As before, this section is not a tutorial, but a reference. There is no single, "correct" way to analyze malware, and the techniques described here are only a subset of those available. I will expand this section over time, and I hope you will contribute, too!</p>
+<h1 id="primary-objectives">Primary Objectives</h1>
+<p>When analyzing malware, there are a few primary objectives you'll aim to achieve:</p>
+<ul>
+<li>Identify the source of the attack. (This is known as "Attribution.")</li>
+<li>Determine the attacker's specific goals.</li>
+<li>Enumerate the steps the attacker took to achieve their goals.</li>
+<li>Document the malware's capabilities and damage potential.</li>
+<li>Design detections and countermeasures to prevent future attacks.</li>
+</ul>
+<p>Attackers will do everything in their power to thwart analysis—from obfuscating code to impede analysis, to employing the tactics of other well-known threat actors to muddle attribution. As a result, the analysis process can be difficult and time-consuming. In some cases, full-scale analysis can take weeks or months, with inconclusive results.</p>
+<p>The threat landscape evolves at a rapid pace; rather than attempting to perform a full analysis of every new sample, it is better to triage, prioritize, and analyze samples according to their potential impact, postponing lower-priority samples for later analysis.</p>
+<h2 id="regarding-attribution">Regarding Attribution</h2>
+<p>When a breach takes place, the first question everyone asks is "Who is responsible?" This is often a difficult question to answer, and it is best to avoid haphazard guesses. Attribution can help defenders understand an adversary; if their strategies are known, defenders can respond accordingly. However, <em>mis-attribution</em> can cause defenders to focus in the wrong places, and can cause trouble when one group takes the blame for another's actions. It is common for advanced threat actors to imitate the behaviors of other threat actors, to muddle attribution.</p>
+<p>Rather than focusing heavily on attribution, it is better to ask, "How can we detect and prevent this in the future?" By analyzing how malware functions and propagates, we can reveal attack patterns—and build defenses—which are threat-agnostic. This protects systems against <em>all</em> attackers, not just specific threats.</p>
+<h1 id="keeping-it-safe">Keeping it Safe</h1>
+<p>Malware analysis is a dangerous business. Malware authors are constantly developing new techniques, not only to thwart analysis, but in some cases, to <a href="https://blog.google/threat-analysis-group/new-campaign-targeting-security-researchers/">damage or infect researchers' systems</a>. It is essential to protect your analysis environment from data loss and infection. The following steps will help you keep your analysis environment safe:</p>
+<ul>
+<li>Maintain a dedicated analysis environment. Do not perform analysis on your production networks and systems. If you must perform analysis in production, ensure that you have clean backups, and if possible, isolate the system from the network to prevent lateral movement.</li>
+<li>Use virtual machines. Virtual machines are a great way to isolate your analysis environment. Ensure that you have a clean snapshot of the VM before you begin analysis, so that you can restore it quickly. If possible, use a disposable VM, such as Google's <a href="https://cloud.google.com/spot-vms">Spot VMs</a>.</li>
+<li>Keep regular, redundant backups of essential data, such as analysis notes and samples. Test backups to ensure they work as expected.</li>
+<li>When interacting with attacker-owned C2 servers, use VPNs or disposable network interfaces. Do not use production networks and interfaces, which could reveal your identity to the attacker.</li>
+</ul>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -1308,10 +1382,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "/athenaeum/", "features": [], "search": "/athenaeum/assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="/athenaeum/assets/javascripts/bundle.1e8ae164.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.1e8ae164.min.js"></script>
       
     
   </body>

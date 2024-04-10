@@ -12,19 +12,25 @@
         <meta name="author" content="Haxys Labs">
       
       
+        <link rel="canonical" href="https://haxys.net/athenaeum/ScriptSharks.com/0x20%20Analysis/22%20Language%20Tricks/HTML%20and%20JS/">
       
       
+        <link rel="prev" href="../../21%20File%20Forensics/ISOs/">
       
-      <link rel="icon" href="/athenaeum/assets/images/favicon.png">
+      
+        <link rel="next" href="../../../0x30%20Tools%20of%20the%20Trade/30%20Virtual%20Machines/00%20Background/">
+      
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17">
     
     
       
-        <title>Haxys Labs | Athenaeum</title>
+        <title>HTML and JavaScript - Haxys Labs | Athenaeum</title>
       
     
     
-      <link rel="stylesheet" href="/athenaeum/assets/stylesheets/main.bcfcd587.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.bcfcd587.min.css">
       
       
 
@@ -43,7 +49,7 @@
       
     
     
-    <script>__md_scope=new URL("/athenaeum/",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -61,6 +67,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#embedded-file-downloads" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -73,7 +84,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/athenaeum/." title="Haxys Labs | Athenaeum" class="md-header__button md-logo" aria-label="Haxys Labs | Athenaeum" data-md-component="logo">
+    <a href="../../../.." title="Haxys Labs | Athenaeum" class="md-header__button md-logo" aria-label="Haxys Labs | Athenaeum" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -93,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              HTML and JavaScript
             
           </span>
         </div>
@@ -180,7 +191,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/athenaeum/." title="Haxys Labs | Athenaeum" class="md-nav__button md-logo" aria-label="Haxys Labs | Athenaeum" data-md-component="logo">
+    <a href="../../../.." title="Haxys Labs | Athenaeum" class="md-nav__button md-logo" aria-label="Haxys Labs | Athenaeum" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -210,7 +221,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/." class="md-nav__link">
+      <a href="../../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -227,17 +238,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -251,7 +264,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             ScriptSharks.com
@@ -265,7 +278,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/" class="md-nav__link">
+      <a href="../../../" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -321,7 +334,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0x00%20History/00%20Sipping%20from%20the%20Fire%20Hose/" class="md-nav__link">
+      <a href="../../../0x00%20History/00%20Sipping%20from%20the%20Fire%20Hose/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -342,7 +355,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0x00%20History/01%20In%20the%20Beginning/" class="md-nav__link">
+      <a href="../../../0x00%20History/01%20In%20the%20Beginning/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -363,7 +376,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0x00%20History/02%20Malware%20Explosion/" class="md-nav__link">
+      <a href="../../../0x00%20History/02%20Malware%20Explosion/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -384,7 +397,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0x00%20History/03%20The%2090s/" class="md-nav__link">
+      <a href="../../../0x00%20History/03%20The%2090s/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -405,7 +418,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0x00%20History/04%20Millenial%20Malware/" class="md-nav__link">
+      <a href="../../../0x00%20History/04%20Millenial%20Malware/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -426,7 +439,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0x00%20History/05%20Ransomware%20Rising/" class="md-nav__link">
+      <a href="../../../0x00%20History/05%20Ransomware%20Rising/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -490,7 +503,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0x10%20Design/10%20Introduction/" class="md-nav__link">
+      <a href="../../../0x10%20Design/10%20Introduction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -511,7 +524,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0x10%20Design/11%20Overview/" class="md-nav__link">
+      <a href="../../../0x10%20Design/11%20Overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -567,7 +580,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0x10%20Design/12%20Droppers/00%20Intro/" class="md-nav__link">
+      <a href="../../../0x10%20Design/12%20Droppers/00%20Intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -588,7 +601,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0x10%20Design/12%20Droppers/10%20Design/" class="md-nav__link">
+      <a href="../../../0x10%20Design/12%20Droppers/10%20Design/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -609,7 +622,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0x10%20Design/12%20Droppers/20%20LNK/" class="md-nav__link">
+      <a href="../../../0x10%20Design/12%20Droppers/20%20LNK/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -630,7 +643,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0x10%20Design/12%20Droppers/30%20ISO/" class="md-nav__link">
+      <a href="../../../0x10%20Design/12%20Droppers/30%20ISO/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -651,7 +664,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0x10%20Design/12%20Droppers/40%20HTML/" class="md-nav__link">
+      <a href="../../../0x10%20Design/12%20Droppers/40%20HTML/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -685,17 +698,19 @@
                 
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" checked>
         
           
           <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
@@ -709,7 +724,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_4">
             <span class="md-nav__icon md-icon"></span>
             0x20 Analysis
@@ -723,7 +738,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0x20%20Analysis/20%20Introduction/" class="md-nav__link">
+      <a href="../../20%20Introduction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -779,7 +794,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0x20%20Analysis/21%20File%20Forensics/Emails/" class="md-nav__link">
+      <a href="../../21%20File%20Forensics/Emails/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -800,7 +815,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0x20%20Analysis/21%20File%20Forensics/ISOs/" class="md-nav__link">
+      <a href="../../21%20File%20Forensics/ISOs/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -826,17 +841,19 @@
                 
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_3" checked>
         
           
           <label class="md-nav__link" for="__nav_2_4_3" id="__nav_2_4_3_label" tabindex="0">
@@ -850,7 +867,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_4_3">
             <span class="md-nav__icon md-icon"></span>
             22 Language Tricks
@@ -861,10 +878,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0x20%20Analysis/22%20Language%20Tricks/HTML%20and%20JS/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    HTML and JavaScript
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -873,6 +908,66 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#embedded-file-downloads" class="md-nav__link">
+    <span class="md-ellipsis">
+      Embedded File Downloads
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Embedded File Downloads">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extracting-embedded-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Extracting Embedded Files
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -971,7 +1066,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0x30%20Tools%20of%20the%20Trade/30%20Virtual%20Machines/00%20Background/" class="md-nav__link">
+      <a href="../../../0x30%20Tools%20of%20the%20Trade/30%20Virtual%20Machines/00%20Background/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -992,7 +1087,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0x30%20Tools%20of%20the%20Trade/30%20Virtual%20Machines/01%20Hypervisors/" class="md-nav__link">
+      <a href="../../../0x30%20Tools%20of%20the%20Trade/30%20Virtual%20Machines/01%20Hypervisors/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1013,7 +1108,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0x30%20Tools%20of%20the%20Trade/30%20Virtual%20Machines/02%20Guest%20OSes/" class="md-nav__link">
+      <a href="../../../0x30%20Tools%20of%20the%20Trade/30%20Virtual%20Machines/02%20Guest%20OSes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1077,7 +1172,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0x30%20Tools%20of%20the%20Trade/31%20File%20Manipulation/Metadata/" class="md-nav__link">
+      <a href="../../../0x30%20Tools%20of%20the%20Trade/31%20File%20Manipulation/Metadata/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1149,7 +1244,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0xF0%20About/FC%20Old%20News/" class="md-nav__link">
+      <a href="../../../0xF0%20About/FC%20Old%20News/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1170,7 +1265,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0xF0%20About/FD%20Origins/" class="md-nav__link">
+      <a href="../../../0xF0%20About/FD%20Origins/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1191,7 +1286,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0xF0%20About/FE%20Changelog/" class="md-nav__link">
+      <a href="../../../0xF0%20About/FE%20Changelog/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1212,7 +1307,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0xF0%20About/FF%20License/" class="md-nav__link">
+      <a href="../../../0xF0%20About/FF%20License/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1259,6 +1354,56 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#embedded-file-downloads" class="md-nav__link">
+    <span class="md-ellipsis">
+      Embedded File Downloads
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Embedded File Downloads">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extracting-embedded-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Extracting Embedded Files
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1269,8 +1414,134 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+  
+  
+
+
+<h1>HTML and JavaScript</h1>
+
+<h2 id="embedded-file-downloads">Embedded File Downloads</h2>
+<h3 id="overview">Overview</h3>
+<p>HTML droppers often abuse <strong>embedded file downloads</strong> to imitate downloading a file from the internet. With this technique, arbitrary files can be embedded within an HTML document, then extracted via web browsers' built-in "download" functionality. This looks nigh-indistinguishable from typical downloads.</p>
+<p>There are a few benefits to this technique:</p>
+<ul>
+<li>It bypasses web content filters.<ul>
+<li>These filters block access to malicious sites, including malware-distribution sites.</li>
+<li>Users who are aware of these filters expect to be protected from malicious files.</li>
+<li>Embedded downloads can abuse this trust, reducing suspicion of embedded files.</li>
+</ul>
+</li>
+<li>It does not require a network connection.<ul>
+<li>Embedded files are fully contained within an HTML document.</li>
+<li>If the user has the HTML document, they can download the embedded file offline.</li>
+</ul>
+</li>
+<li>It can be disguised with ease.<ul>
+<li>The HTML dropper can imitate legitimate websites, web content filters, etc.</li>
+<li>This makes them especially useful when distributing malware via phishing emails.</li>
+</ul>
+</li>
+</ul>
+<h3 id="examples">Examples</h3>
+<p>Embedded files can appear as a simple HTML hyperlink tag:</p>
+<pre><code class="language-html">&lt;a href=&quot;data:application/octet-stream;base64,AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA[...]&quot;
+    target=&quot;_self&quot; download=&quot;documents.iso&quot;&gt;
+    Download this file
+&lt;/a&gt;
+</code></pre>
+<p>In this instance, the <code>documents.iso</code> file is embedded as a base64-encoded link in the <code>href</code> attribute of the hyperlink. When the user clicks the "Download this file" link, the download is initiated.</p>
+<p>Rather than depending on users to click hyperlinks, embedded files can also be served via JavaScript, set to download as soon as the page has loaded:</p>
+<pre><code class="language-html">&lt;html&gt;
+    &lt;head&gt;
+        &lt;script&gt;
+            const filename = &quot;documents.iso&quot;;
+            const contentBase64 = (
+                 &quot;AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&quot;
+                +&quot;AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&quot;
+                +&quot;AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&quot;
+                // [and so on]
+            );
+            function trigger(){
+                var element = document.createElement(&quot;a&quot;);
+                element.setAttribute(&quot;href&quot;, `data:application/octet-stream;base64,${contentBase64}`);
+                element.setAttribute(&quot;target&quot;, &quot;_self&quot;);
+                element.setAttribute(&quot;download&quot;, filename);
+                element.style.display = &quot;none&quot;;
+                document.body.appendChild(element);
+                element.click();
+                document.body.removeChild(element);
+            }
+        &lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body onload=&quot;trigger()&quot;&gt;
+        (html body)
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>In the above example, the <code>trigger</code> function is called when the page finishes loading, thanks to the <code>onload</code> attribute of the <code>body</code> tag. The <code>trigger</code> function adds a new HTML hyperlink tag to the page, formatted just like the one from the previous example, except the hyperlink is hidden from view. Once created, the script automatically clicks the link (via <code>element.click()</code>), triggering the download. Finally, it removes the hyperlink tag from the page.</p>
+<h3 id="extracting-embedded-files">Extracting Embedded Files</h3>
+<p>There are two ways to extract embedded files from HTML documents. The first method is simple: Open the HTML document and accept the download. This has its risks, of course, as you'll be executing whatever JavaScript code is also embedded in the HTML, but if you're working in a properly-maintained and isolated VM, most risks should be mitigated.</p>
+<p>The more complicated (yet safer) method is to open the HTML file, rip out the section containing the embedded file, and re-assemble it manually. In the above examples, extracting and decoding the Base64-encoded payload should be fairly straightforward. In the case of the simple hyperlink, one could open the HTML file, find the beginning of the Base64 block, and cut everything before it. Then, they could jump to the end of the document, scroll back until they find the end of the Base64 block, and cut everything after it. This would produce a single, isolated block of Base64 containing the embedded file.</p>
+<p>Extracting the embedded file from the more advanced JavaScript version is a little more tricky. The Base64 is split across nearly 22 thousand individual lines; to perform the extraction by hand would be excruciating, with a significant risk of human error.</p>
+<p>Fortunately, we don't have to do everything by hand. We'll use Python to extract the embedded file. First, we'll open the file:</p>
+<pre><code class="language-python">&gt;&gt;&gt; with open(&quot;statement.htm&quot;,&quot;r&quot;) as infile:
+...     # Omit empty lines and strip surrounding whitespace.
+...     contents = [line.strip() for line in infile.readlines() if line.strip()]
+... 
+&gt;&gt;&gt; len(contents)
+21988
+</code></pre>
+<p>As stated, the file has nearly 22 thousand lines. Looking at the code, we can see that the Base64 is split into chunks, each on its own line, surrounded with quotes, with an optional addition symbol (<code>+</code>) at the front. To identify these lines, we'll build a <a href="https://www.w3schools.com/python/python_regex.asp">regex</a>:</p>
+<pre><code class="language-python">&gt;&gt;&gt; import re
+&gt;&gt;&gt; lines = []
+&gt;&gt;&gt; for line in contents:
+...     try:
+...         match = re.search('\\+?&quot;([A-Za-z0-9\\+/=]+)&quot;', line).group(1)
+...         lines.append(match)
+...     except AttributeError:
+...         pass
+... 
+&gt;&gt;&gt; len(lines)
+21857
+&gt;&gt;&gt; lines[0]
+'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'
+</code></pre>
+<p>We've successfully extracted the Base64 lines from the HTML file. Let's reassemble the lines into a single block:</p>
+<pre><code class="language-python">&gt;&gt;&gt; payload = &quot;&quot;.join(lines)
+&gt;&gt;&gt; len(payload)
+1660296
+&gt;&gt;&gt; payload[:20]
+'AAAAAAAAAAAAAAAAAAAA'
+</code></pre>
+<p>Having reassembled the Base64-encoded payload into a string, we can now decode it, then write it to a file:</p>
+<pre><code class="language-python">&gt;&gt;&gt; from base64 import b64decode
+&gt;&gt;&gt; decoded = b64decode(payload)
+&gt;&gt;&gt; decoded[:20]
+b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+&gt;&gt;&gt; with open(&quot;documents.iso&quot;,&quot;wb&quot;) as outfile:
+...     outfile.write(decoded)
+... 
+1245184
+</code></pre>
+<p>Excellent! We have successfully extracted the embedded file from the HTML dropper.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -1308,10 +1579,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "/athenaeum/", "features": [], "search": "/athenaeum/assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../../..", "features": [], "search": "../../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="/athenaeum/assets/javascripts/bundle.1e8ae164.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.1e8ae164.min.js"></script>
       
     
   </body>

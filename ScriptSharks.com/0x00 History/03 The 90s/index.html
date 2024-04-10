@@ -12,19 +12,25 @@
         <meta name="author" content="Haxys Labs">
       
       
+        <link rel="canonical" href="https://haxys.net/athenaeum/ScriptSharks.com/0x00%20History/03%20The%2090s/">
       
       
+        <link rel="prev" href="../02%20Malware%20Explosion/">
       
-      <link rel="icon" href="/athenaeum/assets/images/favicon.png">
+      
+        <link rel="next" href="../04%20Millenial%20Malware/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17">
     
     
       
-        <title>Haxys Labs | Athenaeum</title>
+        <title>03 Polymorphs, Macros and RATs! (Oh My!) - Haxys Labs | Athenaeum</title>
       
     
     
-      <link rel="stylesheet" href="/athenaeum/assets/stylesheets/main.bcfcd587.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.bcfcd587.min.css">
       
       
 
@@ -43,7 +49,7 @@
       
     
     
-    <script>__md_scope=new URL("/athenaeum/",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -61,6 +67,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#viruses-evolved" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -73,7 +84,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/athenaeum/." title="Haxys Labs | Athenaeum" class="md-header__button md-logo" aria-label="Haxys Labs | Athenaeum" data-md-component="logo">
+    <a href="../../.." title="Haxys Labs | Athenaeum" class="md-header__button md-logo" aria-label="Haxys Labs | Athenaeum" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -93,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              03 Polymorphs, Macros and RATs! (Oh My!)
             
           </span>
         </div>
@@ -180,7 +191,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/athenaeum/." title="Haxys Labs | Athenaeum" class="md-nav__button md-logo" aria-label="Haxys Labs | Athenaeum" data-md-component="logo">
+    <a href="../../.." title="Haxys Labs | Athenaeum" class="md-nav__button md-logo" aria-label="Haxys Labs | Athenaeum" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -210,7 +221,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -227,17 +238,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -251,7 +264,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             ScriptSharks.com
@@ -265,7 +278,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/" class="md-nav__link">
+      <a href="../../" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -283,17 +296,19 @@
                 
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
@@ -307,7 +322,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
             0x00 History
@@ -321,7 +336,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0x00%20History/00%20Sipping%20from%20the%20Fire%20Hose/" class="md-nav__link">
+      <a href="../00%20Sipping%20from%20the%20Fire%20Hose/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -342,7 +357,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0x00%20History/01%20In%20the%20Beginning/" class="md-nav__link">
+      <a href="../01%20In%20the%20Beginning/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -363,7 +378,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0x00%20History/02%20Malware%20Explosion/" class="md-nav__link">
+      <a href="../02%20Malware%20Explosion/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -381,10 +396,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0x00%20History/03%20The%2090s/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -393,6 +417,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -405,7 +430,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0x00%20History/04%20Millenial%20Malware/" class="md-nav__link">
+      <a href="../04%20Millenial%20Malware/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -426,7 +451,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0x00%20History/05%20Ransomware%20Rising/" class="md-nav__link">
+      <a href="../05%20Ransomware%20Rising/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -490,7 +515,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0x10%20Design/10%20Introduction/" class="md-nav__link">
+      <a href="../../0x10%20Design/10%20Introduction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -511,7 +536,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0x10%20Design/11%20Overview/" class="md-nav__link">
+      <a href="../../0x10%20Design/11%20Overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -567,7 +592,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0x10%20Design/12%20Droppers/00%20Intro/" class="md-nav__link">
+      <a href="../../0x10%20Design/12%20Droppers/00%20Intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -588,7 +613,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0x10%20Design/12%20Droppers/10%20Design/" class="md-nav__link">
+      <a href="../../0x10%20Design/12%20Droppers/10%20Design/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -609,7 +634,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0x10%20Design/12%20Droppers/20%20LNK/" class="md-nav__link">
+      <a href="../../0x10%20Design/12%20Droppers/20%20LNK/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -630,7 +655,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0x10%20Design/12%20Droppers/30%20ISO/" class="md-nav__link">
+      <a href="../../0x10%20Design/12%20Droppers/30%20ISO/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -651,7 +676,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0x10%20Design/12%20Droppers/40%20HTML/" class="md-nav__link">
+      <a href="../../0x10%20Design/12%20Droppers/40%20HTML/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -723,7 +748,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0x20%20Analysis/20%20Introduction/" class="md-nav__link">
+      <a href="../../0x20%20Analysis/20%20Introduction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -779,7 +804,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0x20%20Analysis/21%20File%20Forensics/Emails/" class="md-nav__link">
+      <a href="../../0x20%20Analysis/21%20File%20Forensics/Emails/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -800,7 +825,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0x20%20Analysis/21%20File%20Forensics/ISOs/" class="md-nav__link">
+      <a href="../../0x20%20Analysis/21%20File%20Forensics/ISOs/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -864,7 +889,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0x20%20Analysis/22%20Language%20Tricks/HTML%20and%20JS/" class="md-nav__link">
+      <a href="../../0x20%20Analysis/22%20Language%20Tricks/HTML%20and%20JS/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -971,7 +996,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0x30%20Tools%20of%20the%20Trade/30%20Virtual%20Machines/00%20Background/" class="md-nav__link">
+      <a href="../../0x30%20Tools%20of%20the%20Trade/30%20Virtual%20Machines/00%20Background/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -992,7 +1017,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0x30%20Tools%20of%20the%20Trade/30%20Virtual%20Machines/01%20Hypervisors/" class="md-nav__link">
+      <a href="../../0x30%20Tools%20of%20the%20Trade/30%20Virtual%20Machines/01%20Hypervisors/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1013,7 +1038,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0x30%20Tools%20of%20the%20Trade/30%20Virtual%20Machines/02%20Guest%20OSes/" class="md-nav__link">
+      <a href="../../0x30%20Tools%20of%20the%20Trade/30%20Virtual%20Machines/02%20Guest%20OSes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1077,7 +1102,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0x30%20Tools%20of%20the%20Trade/31%20File%20Manipulation/Metadata/" class="md-nav__link">
+      <a href="../../0x30%20Tools%20of%20the%20Trade/31%20File%20Manipulation/Metadata/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1149,7 +1174,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0xF0%20About/FC%20Old%20News/" class="md-nav__link">
+      <a href="../../0xF0%20About/FC%20Old%20News/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1170,7 +1195,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0xF0%20About/FD%20Origins/" class="md-nav__link">
+      <a href="../../0xF0%20About/FD%20Origins/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1191,7 +1216,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0xF0%20About/FE%20Changelog/" class="md-nav__link">
+      <a href="../../0xF0%20About/FE%20Changelog/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1212,7 +1237,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/athenaeum/ScriptSharks.com/0xF0%20About/FF%20License/" class="md-nav__link">
+      <a href="../../0xF0%20About/FF%20License/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1258,6 +1283,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -1269,8 +1296,99 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+  
+  
+
+
+<blockquote>
+<p>"Microsoft is now talking about the digital nervous system... I guess I would be nervous if my system was built on their technology too." ~<a href="https://www.inspiringquotes.us/quotes/OSGJ_V3GzpOEv">Scott McNealy</a>, Co-Founder of <a href="https://en.wikipedia.org/wiki/Sun_Microsystems">Sun Microsystems</a></p>
+</blockquote>
+<h1 id="viruses-evolved">Viruses, Evolved</h1>
+<p>In 1990, Mark Washburn developed the first family of <a href="https://en.wikipedia.org/wiki/Polymorphic_code">polymorphic viruses</a>, known as Chameleon. These viruses could alter their machine-language code (and thus their digital "fingerprint") without altering the functionality of the virus. This effect was achieved by packing the viral core into a wrapper using randomized encryption algorithms and keys. Washburn designed the first of these viruses, <a href="https://en.wikipedia.org/wiki/1260_(computer_virus)">1260</a> (otherwise known as V2PX), after studying the Vienna Virus's disassembled source code, published by Ralf Burger (of Virdem fame).</p>
+<p><a href="https://en.wikipedia.org/wiki/Antivirus_software">AntiVirus (AV) software</a> was in its infancy at this time, and many early AV engines used hash-based detection. Polymorphism enabled malware to evade these hash-based engines, triggering a digital "arms race." AV vendors scrambled to develop new detection methods, which drove malware authors to develop new evasion techniques, which drove new detection methods, and so on.</p>
+<p>This cycle continues to this day.</p>
+<h1 id="michaelangelo">Michaelangelo</h1>
+<p>In 1991, Australian researchers discovered the <a href="https://en.wikipedia.org/wiki/Michelangelo_(computer_virus)">Michaelangelo Virus</a>, designed to infect DOS machines. The virus operated on the BIOS level, infecting systems' boot sectors and spreading to any mounted floppy disks. After infection, it would lay dormant, infecting any inserted floppy disks but otherwise not taking any actions. The virus was set to "detonate" every year on March 6th, at which point it would corrupt any attached storage media. While the data on the drives technically wasn't wiped, their partition maps were corrupted, making file recovery impossible for average users.</p>
+<p>Much ado was made about this virus, particularly after January of 1992, when hardware and software vendors accidentally shipped infected products to consumers. As the virus made headlines, <a href="https://en.wikipedia.org/wiki/John_McAfee">John McAfee</a> (creator of McAfee Antivirus) and other tech "experts" stoked the flames, claiming that millions of computers could be infected with the virus—despite known infections being limited to a few hundred systems. Users were advised not to use their computers on March 6th, or to fiddle with their computers' clocks on March 5th and 7th to avoid the date landing on the 6th. This advice was largely disregarded, and on March 6th, 1992, only ten to twenty thousand cases of data loss were reported. The last known Michaelangelo infection was in 1997.</p>
+<p>This was one of the earliest cases of "branded" malware getting mass-publicity and causing undue panic, despite having a relatively low impact. This tradition continues to this day, with new "branded" malware and vulnerabilities making headlines every year, followed by countless vendors using the subsequent panic to promote their "cutting-edge" security products.</p>
+<h1 id="macro-viruses">Macro Viruses</h1>
+<p>In 1995, the same year that the <a href="https://en.wikipedia.org/wiki/Hackers_(film)">greatest movie of all time</a> was released to adoring theater audiences, the <a href="http://virus.wikidot.com/concept">Concept</a> virus became the first known example of a <a href="https://en.wikipedia.org/wiki/Macro_virus">Macro Virus</a>, abusing Microsoft Word's built-in macro-scripting language to infect documents and take unwanted actions on systems.</p>
+<p>In 1996, <a href="http://web.archive.org/web/20101108055516/http://vx.netlux.org/lib/static/vdat/mvsol001.htm">XML.Laroux</a> was the first Microsoft Excel macrovirus. These viruses were the first viruses designed to infect documents, rather than executable files, and they were the first cross-platform viruses, capable of running on any system with Microsoft Office installed.</p>
+<h1 id="nobody-is-safe">Nobody is Safe</h1>
+<p>1996 also saw the release of the <a href="https://en.wikipedia.org/wiki/Staog">Staog</a> virus, the first computer virus written for Linux. Fortunately, the vulnerabilities exploited by the virus were patched quickly, and the virus died off with little fanfare. In the years since, there have been <a href="https://www.unixmen.com/meet-linux-viruses/">numerous Linux malware discovered in the wild</a>, yet Linux users continue to proudly boast: "I don't need antivirus; I run Linux." (They're not alone; macOS users make the same boast.)</p>
+<h1 id="knock-knock">Knock, Knock</h1>
+<p>As if macro viruses and Linux viruses weren't enough, 1996 also brought <a href="https://web.archive.org/web/20081201090344/http://www.megasecurity.org/trojans/n/noknok/Noknok5.0.html">NokNok 5.0</a>, the first (that I'm aware of) Remote-Access Trojan (RAT).</p>
+<p>Tools for remote desktop access have been around <a href="https://tedium.co/2021/02/12/remote-desktop-access-history/">since the early '80s</a>, with software like <a href="https://en.wikipedia.org/wiki/Carbon_Copy_(software)">Carbon Copy</a> and <a href="https://en.wikipedia.org/wiki/Timbuktu_(software)">Timbuktu</a> leading the pack. These tools were designed for legitimate use, and made no attempt to evade detection or deceive users.</p>
+<p>NokNok changed the game, providing remote control capabilities in a discreet package which could be installed without victims' knowledge. This was typically achieved via the <a href="https://en.wikipedia.org/wiki/Trojan_horse_(computing)">Trojan Horse</a> technique, wherein a malicious payload is attached to a legitimate, desirable application.</p>
+<p>This technique is a form of Social Engineering, much like its <a href="https://en.wikipedia.org/wiki/Trojan_Horse">mythical namesake</a>, and has seen widespread popularity among file-sharing and piracy communities, where users often seek free "cracked" copies or dodgy "key generators" ("keygens") for expensive legitimate software.</p>
+<h1 id="cih-the-space-filler">CIH, the Space-Filler</h1>
+<p>In 1998, the <a href="https://en.wikipedia.org/wiki/CIH_(computer_virus)">CIH virus</a> infected sixty million computers worldwide, destroying data and, in many cases, erasing the system BIOS. The virus caused an estimated US$1 billion in damages, yet no charges were filed against its author, Chen Ing-hau, who claimed that he wrote the virus to challenge the AV industry's bold detection claims. He and a fellow student, Weng Shi-hao, co-authored an antivirus, enabling users to safely remove CIH from infected systems.</p>
+<p>At the time CIH was released, many viruses would prepend or append their viral code to the files they infected, resulting in changes to the size of the infected files. AV vendors caught on to this, and created detections for file-size alterations. To defeat this detection mechanism, the CIH authors developed a method to infect files without altering their size.</p>
+<p>When languages like C++ or Rust are compiled to binary, assemblers often include "gaps" of unused bytes in the executable file, padding sections to ensure proper byte alignment. The CIH virus would write its code into these gaps, thus infecting the file without altering its size.</p>
+<h1 id="plague-of-rats">Plague of RATs</h1>
+<p>Following NokNok, RATs became a hot commodity. In 1998, the <a href="https://en.wikipedia.org/wiki/Cult_of_the_Dead_Cow">Cult of the Dead Cow</a> (cDc) released <a href="https://en.wikipedia.org/wiki/Back_Orifice">Back Orifice</a> (BO), a tool they designed to demonstrate the insecurity of Windows systems. Despite claims that it was intended only for legitimate uses, the tool employed evasive tactics and could be installed without user interaction, making it perfect for use as a Trojan.</p>
+<p>In 1999, cDc released <a href="https://en.wikipedia.org/wiki/Back_Orifice_2000">Back Orifice 2000</a> (BO2k), the successor to their previous year's release. BO2k added support for Windows NT, 2000 and XP, and employed a plugin architecture, enabling new functionality to be pushed to clients on-the-fly. As before, BO2k was touted as a legitimate tool. Here are a few of the plugins provided by the tool:</p>
+<ul>
+<li>Remote control of mouse and keyboard.</li>
+<li>Remote observation of the user's desktop and audio.</li>
+<li>Rootkit behavior, capable of hiding things from the system.</li>
+<li>Bypass firewalls via tunneling.</li>
+<li>Route through "connection chains" of multiple infected hosts.</li>
+<li>Live keylogging.</li>
+<li>Clientless Command-and-Control (C2) via IRC.</li>
+</ul>
+<p>With features like these, it's no surprise that BO2k was classified as malware in most AV engines.</p>
+<p>Following on BO2k's coattails, <a href="https://www.sub7crew.org/archive/history/">Sub7</a> was also released in 1999, and swiftly became one of the most popular RATs in the world. Much like BO2k, Sub7 was designed for trojanized installation, and provided a variety of similar features:</p>
+<ul>
+<li>Remote control and observation.</li>
+<li>Recovering cached passwords.</li>
+<li><a href="https://en.wikipedia.org/wiki/ICQ">ICQ</a> account takeover.</li>
+<li>C2 via IRC.</li>
+<li>Keylogging.</li>
+<li>Port scanning and redirection.</li>
+</ul>
+<p>Sub7 also included some "prank" features, making it popular among <a href="https://en.wikipedia.org/wiki/Script_kiddie">skids</a>:</p>
+<ul>
+<li>Open and close the CD tray.</li>
+<li>Swap mouse buttons.</li>
+<li>Use text-to-speech to make the computer speak.</li>
+</ul>
+<p>In the decades folowing the release of BO2k and Sub7, <a href="https://www.civilsphereproject.org/research/a-study-of-remote-access-trojans">the popularity and proliferation of RATs has soared</a>, and the focus has shifted from pranks to profits.</p>
+<h1 id="outlook-look-out">Outlook, Look Out</h1>
+<p>In 1999, a variety of malware was released which took advantage of Microsoft products, including Outlook, Outlook Express, and Office.</p>
+<ul>
+<li>The <a href="https://en.wikipedia.org/wiki/Happy99">Happy99 worm</a> wished users Happy New Year while infecting outbound emails.</li>
+<li>The <a href="https://en.wikipedia.org/wiki/Melissa_(computer_virus)">Melissa worm</a> was a macro virus which spread via Microsoft Office documents attached to infected emails.<ul>
+<li>The documents appeared to contain login credentials for a number of pornographic websites, designed to entice users to open the file.</li>
+</ul>
+</li>
+<li>The <a href="https://en.wikipedia.org/wiki/ExploreZip">ExploreZip worm</a> was discovered. It was designed to destroy Microsoft Office documents.</li>
+<li>The <a href="https://en.wikipedia.org/wiki/Kak_worm">Kak worm</a>, written in JavaScript, spread by exploiting a bug in Outlook Express.</li>
+</ul>
+<h1 id="shattering-windows">Shattering Windows</h1>
+<p>In the years following the release of Windows 3.0, Microsoft became the global leader in the desktop OS market. Much to the chagrin of Mac and Linux users, Microsoft's products became the most wide-spread software in the world, despite being plagued by vulnerabilities and malware. To this day, the vast majority of malware targets Microsoft Office and Windows. These products continue to be the most common route for malware to infect systems and networks, whether via exploitation of 0-day vulnerabilities, or simply by abusing the built-in functionality of the software. In fact, one could argue that <em>the single most effective way to prevent malware infections</em> would be to eliminate all Microsoft products from your workplace.</p>
+<p>Still, Microsoft's global market dominance continues unabated. In fact, they now offer <a href="https://en.wikipedia.org/wiki/Microsoft_Defender">Microsoft Defender</a>, a clever way to turn Microsoft's historically bug-ridden software into yet another revenue source. Defender protects Windows systems against malware which, historically, abuses Microsoft's own products to infect and spread.</p>
+<p>Microsoft creates and sells exploitable products, then creates and sells exploit protection.</p>
+<p>That's like if Kia sold cars that sometimes exploded, then sold a separate add-on package that prevented the explosions.</p>
+<p>Brilliant!</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -1308,10 +1426,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "/athenaeum/", "features": [], "search": "/athenaeum/assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="/athenaeum/assets/javascripts/bundle.1e8ae164.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.1e8ae164.min.js"></script>
       
     
   </body>
