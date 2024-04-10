@@ -1,13 +1,9 @@
 site_name: Haxys Labs | Athenaeum
 site_description: A collection of documentation by Haxys Labs.
 site_author: Haxys Labs
-copyright: Copyright © 2024 Haxys Labs
+copyright: Copyright © 2024 Haxys Labs &colon;&colon; This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
 site_url: https://haxys.net/athenaeum/
 repo_url: https://github.com/haxys/athenaeum/
-
-nav:
-  - Home: index.md
-  - Blog: https://haxys.net/
 
 theme:
   name: material
