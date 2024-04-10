@@ -98,7 +98,7 @@ When done working with the ISO, be sure to close it:
 
 ### Via FS.Archive
 
-We can also use the `fs.archive` [library](/////), another non-standard Python extension, which wraps around `pycdlib` to provide a simpler interface. To start, we'll need to install the package:
+We can also use the `fs.archive` [library](https://github.com/althonos/fs.archive), another non-standard Python extension, which wraps around `pycdlib` to provide a simpler interface. To start, we'll need to install the package:
 
 ```sh
 (iso.venv) analyst@lab_vm iso.venv % pip install fs.archive

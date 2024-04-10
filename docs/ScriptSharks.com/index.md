@@ -1,6 +1,8 @@
 ---
-title: "Malware Portal"
+title: "Home"
 ---
+
+_**NOTE: This is an archive of my original content hosted at scriptsharks.com. The original site is no longer available, but I have preserved the content here for posterity.**_
 
 # ScriptSharks
 
@@ -19,11 +21,11 @@ ScriptSharks aims to document the art and history of malware design and analysis
 ## News
 
 ### 2022.12.19
-We've added new sections regarding [HTML and JavaScript](/0x20%20Analysis/22%20Language%20Tricks/HTML%20and%20JS/) language tricks, [analyzing ISO files](/0x20%20Analysis/21%20File%20Forensics/ISOs/), and the [handy Unix `file` utility](/0x30%20Tools%20of%20the%20Trade/31%20File%20Manipulation/Metadata/).
+We've added new sections regarding [HTML and JavaScript](./0x20 Analysis/22 Language Tricks/HTML and JS.md) language tricks, [analyzing ISO files](./0x20 Analysis/21 File Forensics/ISOs.md), and the [handy Unix `file` utility](./0x30 Tools of the Trade/31 File Manipulation/Metadata.md).
 
 ### 2022.12.12
 
-Learn about a currently-trending dropper design by [building it yourself](/0x10%20Design/12%20Droppers/00%20Intro/)!
+Learn about a currently-trending dropper design by [building it yourself](./0x10 Design/12 Droppers/00 Intro.md)!
 
 ### 2022.10.24
 
@@ -31,15 +33,15 @@ We've added the Design, Analysis and Tools sections. Check them out!
 
 ### 2022.09.15
 
-Check out the new [Ransomware Rising](/0x00 History/05 Ransomware Rising/) article in the history section, detailing malware trends in the 2010s!
+Check out the new [Ransomware Rising](./0x00 History/05 Ransomware Rising.md) article in the history section, detailing malware trends in the 2010s!
 
 ### 2022.08.24
 
-We added [Millenial Malware](/0x00 History/04 Millenial Malware/) to the history section. Spoiler: It's just so many worms, all over the place...
+We added [Millenial Malware](./0x00 History/04 Millenial Malware.md) to the history section. Spoiler: It's just so many worms, all over the place...
 
 #### Archives
 
-Visit the [old news](/0xF0 About/FC Old News/) page for older updates.
+Visit the [old news](./0xF0 About/FC Old News.md) page for older updates.
 
 ***
 

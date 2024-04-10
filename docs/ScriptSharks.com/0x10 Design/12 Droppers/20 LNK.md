@@ -17,7 +17,7 @@ PoC Dropper/
 └── make_lnk.ps1
 ```
 
-The `iso` folder will be used for construction of the ISO file in [Step 2](/0x10%20Design/12%20Droppers/30%20ISO/).
+The `iso` folder will be used for construction of the ISO file in [Step 2](30 ISO.md).
 
 ## A Basic Stager
 
@@ -125,4 +125,4 @@ $outfile.close();
 
 This opens the document, saves half of the file into a buffer, then deletes and re-creates the file with only half of its data. The result, when opened in Microsoft Word, will generate an error stating that the file could not be read. Faced with this error, victims may believe that the attachment got corrupted somehow, rather than suspecting malware. If they attempt file recovery, they'll see a bit of text, possibly even the embedded logo, as they would expect from a corrupted file.
 
-Launching the document as part of the LNK dropper is fairly straightforward; I'll leave this as an exercise for the reader. (For a hint, revisit the LNK section of the [Dropper Basics](/0x10%20Design/12%20Droppers/00%20Intro/#the-lnk-dropper) page.)
+Launching the document as part of the LNK dropper is fairly straightforward; I'll leave this as an exercise for the reader. (For a hint, revisit the LNK section of the [Dropper Basics](00 Intro.md#the-lnk-dropper) page.)

@@ -6,7 +6,7 @@ title: "20 Know the Enemy"
 
 # The Flip-Side
 
-As mentioned in the [Design Section](/0x10 Design/00 Introduction/), malware researchers and malware authors are two sides of the same coin. In this section, we'll explore the analytic methods, techniques and tools used to examine and understand malware samples, and how to perform such analysis safely. As before, this section is not a tutorial, but a reference. There is no single, "correct" way to analyze malware, and the techniques described here are only a subset of those available. I will expand this section over time, and I hope you will contribute, too!
+As mentioned in the [Design Section](../0x10 Design/10 Introduction.md), malware researchers and malware authors are two sides of the same coin. In this section, we'll explore the analytic methods, techniques and tools used to examine and understand malware samples, and how to perform such analysis safely. As before, this section is not a tutorial, but a reference. There is no single, "correct" way to analyze malware, and the techniques described here are only a subset of those available. I will expand this section over time, and I hope you will contribute, too!
 
 # Primary Objectives
 

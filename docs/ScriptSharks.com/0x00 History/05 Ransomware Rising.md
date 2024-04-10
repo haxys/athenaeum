@@ -64,7 +64,7 @@ I know you're itching to get to the ransomware, but first I should cover some ot
 
 # The Prodigal Malware Returns
 
-Remember Dr. Popp's [AIDS trojan](/0x00 History/02 Malware Explosion/#the-infection-spreads) from back in '89? It was the world's first ransomware, yet it didn't even encrypt users' files! It just scrambled the directory structure. What a laugh! And the author expected victims to mail ransom checks to a P.O. box in Panama! As if the authorities couldn't just watch that mailbox and arrest whoever collected the money. What a silly idea, right?
+Remember Dr. Popp's [AIDS trojan](./02 Malware Explosion.md#the-infection-spreads) from back in '89? It was the world's first ransomware, yet it didn't even encrypt users' files! It just scrambled the directory structure. What a laugh! And the author expected victims to mail ransom checks to a P.O. box in Panama! As if the authorities couldn't just watch that mailbox and arrest whoever collected the money. What a silly idea, right?
 
 Well, not exactly.
 

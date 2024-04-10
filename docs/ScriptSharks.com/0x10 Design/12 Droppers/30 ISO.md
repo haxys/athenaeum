@@ -6,7 +6,7 @@ title: "Step 2: Build the ISO"
 
 ## ISO Design
 
-Having completed the [LNK dropper](/0x10%20Design/12%20Droppers/20%20LNK/#lnk-construction) and its associated stager, we can now bundle them in an ISO. When the target opens the ISO, we only want them to see the LNK file, not the directory containing the stager code. Therefore, when making the ISO, we'll need to hide the `stager` directory.
+Having completed the [LNK dropper](20 LNK.md#lnk-construction) and its associated stager, we can now bundle them in an ISO. When the target opens the ISO, we only want them to see the LNK file, not the directory containing the stager code. Therefore, when making the ISO, we'll need to hide the `stager` directory.
 
 ## ISO Construction
 

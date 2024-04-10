@@ -4,7 +4,7 @@ title: "Step 0: Designing a Dropper"
 
 # Putting it all Together
 
-In the [introduction to droppers](/0x10%20Design/12%20Droppers/00%20Intro/#dropper-examples), we introduced Maldocs, as well as LNK, ISO and HTML droppers. After maldocs were crippled in 2022, threat actors adopted the other three methods, often in combination. In this section, we'll design our own dropper, mirroring a common attack pattern observed in malicious phishing email attachments.
+In the [introduction to droppers](00 Intro.md#dropper-examples), we introduced Maldocs, as well as LNK, ISO and HTML droppers. After maldocs were crippled in 2022, threat actors adopted the other three methods, often in combination. In this section, we'll design our own dropper, mirroring a common attack pattern observed in malicious phishing email attachments.
 
 ## The Con
 
@@ -30,4 +30,4 @@ Now that we've defined our dropper's attack chain chronologically, we can begin 
 
 ## Requirements
 
-To build this dropper, we'll need access to a [Windows VM](/0x30%20Tools%20of%20the%20Trade/Virtual%20Machines/02%20Guest%20OSes/#malware-development) with PowerShell installed.
+To build this dropper, we'll need access to a [Windows VM](../../0x30 Tools of the Trade/30 Virtual Machines/02 Guest OSes.md#malware-development) with PowerShell installed.
